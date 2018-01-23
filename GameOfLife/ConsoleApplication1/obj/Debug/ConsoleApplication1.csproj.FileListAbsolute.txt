@@ -1,0 +1,8 @@
+C:\MieProgetti\GameOfLife\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\MieProgetti\GameOfLife\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\MieProgetti\GameOfLife\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\MieProgetti\GameOfLife\ConsoleApplication1\bin\Debug\GameOfLife.dll
+C:\MieProgetti\GameOfLife\ConsoleApplication1\bin\Debug\GameOfLife.pdb
+C:\MieProgetti\GameOfLife\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\MieProgetti\GameOfLife\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\MieProgetti\GameOfLife\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

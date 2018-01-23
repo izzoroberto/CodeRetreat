@@ -1,0 +1,7 @@
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\obj\Debug\TheGameOfLifeTest.csprojResolveAssemblyReference.cache
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\bin\Debug\TheGameOfLifeTest.dll
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\bin\Debug\TheGameOfLifeTest.pdb
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\obj\Debug\TheGameOfLifeTest.dll
+C:\MieProgetti\GameOfLife\TheGameOfLifeTest\obj\Debug\TheGameOfLifeTest.pdb

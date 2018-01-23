@@ -1,0 +1,15 @@
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\GameOfLifeTest.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\GameOfLifeTest.pdb
+C:\MieProgetti\GameOfLife\GameOfLifeTest\obj\Debug\GameOfLifeTest.csprojResolveAssemblyReference.cache
+C:\MieProgetti\GameOfLife\GameOfLifeTest\obj\Debug\GameOfLifeTest.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\obj\Debug\GameOfLifeTest.pdb
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.abstractions.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.assert.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.core.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.execution.desktop.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.abstractions.xml
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.assert.xml
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.core.xml
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\xunit.execution.desktop.xml
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\GameOfLife.dll
+C:\MieProgetti\GameOfLife\GameOfLifeTest\bin\Debug\GameOfLife.pdb

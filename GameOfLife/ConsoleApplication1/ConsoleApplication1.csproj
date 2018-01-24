@@ -50,9 +50,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\GameOfLife\GameOfLife.csproj">
       <Project>{7aab136b-eea8-489a-8008-9ba87ad296a7}</Project>
       <Name>GameOfLife</Name>

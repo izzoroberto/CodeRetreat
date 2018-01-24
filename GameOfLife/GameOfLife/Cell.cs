@@ -11,12 +11,34 @@ namespace GameOfLife
         public bool IsLive { get; set; }
         public int viciniVivi { get; set; }
 
-        public void update()
+        public Cell update()
         {
             if (viciniVivi < 2 || viciniVivi > 3)
-                IsLive = false;
+            {
+                Cell c = new Cell();
+                c.IsLive = false;
+                return c;
+            }
             if (!IsLive && viciniVivi == 3)
-                IsLive = true;
+            {
+                Cell c = new Cell();
+                c.IsLive = true;
+                return c;
+            }
+            return this;
+        }
+
+        public int controllaVicini(Cell[][] matrix, int x, int y, string debug)
+        {
+            try
+            {
+                viciniVivi = matrix[x][y].IsLive ? viciniVivi + 1 : viciniVivi;
+            }
+            catch (System.IndexOutOfRangeException)
+            {
+                viciniVivi = viciniVivi;
+            }
+            return viciniVivi;
         }
     }
 }

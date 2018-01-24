@@ -3,3 +3,7 @@ C:\MieProgetti\GameOfLife\GameOfLife\bin\Debug\GameOfLife.pdb
 C:\MieProgetti\GameOfLife\GameOfLife\obj\Debug\GameOfLife.csprojResolveAssemblyReference.cache
 C:\MieProgetti\GameOfLife\GameOfLife\obj\Debug\GameOfLife.dll
 C:\MieProgetti\GameOfLife\GameOfLife\obj\Debug\GameOfLife.pdb
+C:\Users\roberto_2\Documents\CodeRetreat\GameOfLife\GameOfLife\bin\Debug\GameOfLife.dll
+C:\Users\roberto_2\Documents\CodeRetreat\GameOfLife\GameOfLife\bin\Debug\GameOfLife.pdb
+C:\Users\roberto_2\Documents\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.dll
+C:\Users\roberto_2\Documents\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.pdb

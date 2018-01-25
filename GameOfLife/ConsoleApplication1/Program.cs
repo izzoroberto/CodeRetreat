@@ -19,12 +19,7 @@ namespace ConsoleApplication1
             matrix[0] = new Cell[3];
             matrix[1] = new Cell[3];
             matrix[2] = new Cell[3];
-
-            //create world at T+1
-            Cell[][] matrixT1 = new Cell[3][];
-            matrixT1[0] = new Cell[3];
-            matrixT1[1] = new Cell[3];
-            matrixT1[2] = new Cell[3];
+            
             //create cell
             Cell cell1 = new Cell();
             cell1.IsLive = false;
@@ -44,6 +39,7 @@ namespace ConsoleApplication1
             cell8.IsLive = false;
             Cell cell9 = new Cell();
             cell9.IsLive = false;
+            
             //populate world
             matrix[0][0] = cell1;
             matrix[0][1] = cell2;
@@ -80,22 +76,40 @@ namespace ConsoleApplication1
                     matrix[i][j].controllaVicini(matrix, i-1, j+1, "diagonale des sopra");
                     //diagonale des sotto
                     matrix[i][j].controllaVicini(matrix, i+1, j+1, "diagonale des sotto");
-                    matrixT1[i][j] = matrix[i][j].update();
+                    //matrixT1[i][j] = matrix[i][j].update();
                 }
                 Console.WriteLine();
             }
-            //T+1
-            for (int i = 0; i < matrixT1.Length; i++)
+
+            for (int i = 0; i < matrix.Length; i++)
             {
-                for (int j = 0; j < matrixT1[i].Length; j++)
+                for (int j = 0; j < matrix[i].Length; j++)
                 {
-                    if (matrixT1[i][j].IsLive)
+
+                    matrix[i][j] = matrix[i][j].update();
+
+
+                    if (matrix[i][j].IsLive)
                         Console.Write(vivo);
-                    if (!matrixT1[i][j].IsLive)
+                    if (!matrix[i][j].IsLive)
                         Console.Write(morto);
+                  
                 }
                 Console.WriteLine();
             }
+
+            ////T+1
+            //for (int i = 0; i < matrixT1.Length; i++)
+            //{
+            //    for (int j = 0; j < matrixT1[i].Length; j++)
+            //    {
+            //        if (matrixT1[i][j].IsLive)
+            //            Console.Write(vivo);
+            //        if (!matrixT1[i][j].IsLive)
+            //            Console.Write(morto);
+            //    }
+            //    Console.WriteLine();
+            //}
             Console.ReadLine();
         }
     }

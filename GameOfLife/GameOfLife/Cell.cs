@@ -25,13 +25,13 @@ namespace GameOfLife
         {
             if (_viciniVivi < 2 || _viciniVivi > 3)
             {
-                Cell c = new Cell();
+                Cell c = new Cell().SetPosition(_x,_y);
                 c.IsLive = false;
                 return c;
             }
             if (!IsLive && _viciniVivi == 3)
             {
-                Cell c = new Cell();
+                Cell c = new Cell().SetPosition(_x, _y);
                 c.IsLive = true;
                 return c;
             }

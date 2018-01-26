@@ -22,12 +22,13 @@ namespace GameOfLifeTest
         {
             var matrix = Mother.CreateMatrix3x3();
             Cell sut = new Cell().StartLife(); 
-            matrix[1][0] = sut;
-            matrix[0][0] = new Cell(0,0);//top
-            matrix[0][1] = new Cell(0,1);//diagonal up left
-            matrix[1][1] = new Cell(1,1).StartLife();//left
-            matrix[2][1] = new Cell(2,1);//diagonal down left
-            matrix[2][0] = new Cell(2,0);//bottom
+            matrix[1][0] = sut.SetPosition(1, 0);
+            matrix[0][0] = new Cell().SetPosition(0, 0);//top
+            matrix[0][1] = new Cell().SetPosition(0, 1);//diagonal up left
+            matrix[1][1] = new Cell().StartLife().SetPosition(1,1);//left
+            matrix[2][1] = new Cell().SetPosition(2,1);//diagonal down left
+            matrix[2][0] = new Cell().SetPosition(2,0);//bottom
+            sut.ControllaVicini(matrix);
             var res = sut.Update();
             Assert.True(!res.IsLive);
         }
@@ -67,17 +68,17 @@ namespace GameOfLifeTest
         {
             var matrix = Mother.CreateMatrix3x3();
             Cell sut = new Cell().StartLife();
-            matrix[1][1] = sut;
+            matrix[1][1] = sut.SetPosition(1, 1);
 
-            matrix[0][0] = new Cell();//diagonal up right
-            matrix[0][1] = new Cell();// top
-            matrix[0][2] = new Cell();//diagonal up left
-            matrix[1][0] = new Cell().StartLife();//right
-            matrix[1][2] = new Cell().StartLife();// left
-            matrix[2][0] = new Cell();//diagonal up right
-            matrix[2][1] = new Cell();//bottom
-            matrix[2][2] = new Cell();//diagonal bottom left
-
+            matrix[0][0] = new Cell().SetPosition(0, 0);//diagonal up right
+            matrix[0][1] = new Cell().SetPosition(0,1);// top
+            matrix[0][2] = new Cell().SetPosition(0,2);//diagonal up left
+            matrix[1][0] = new Cell().StartLife().SetPosition(1, 0);//right
+            matrix[1][2] = new Cell().StartLife().SetPosition(1, 2);// left
+            matrix[2][0] = new Cell().SetPosition(2, 0);//diagonal up right
+            matrix[2][1] = new Cell().SetPosition(2,1);//bottom
+            matrix[2][2] = new Cell().SetPosition(2,2);//diagonal bottom left
+            sut.ControllaVicini(matrix);
             var res = sut.Update();
             Assert.True(res.IsLive);
         }

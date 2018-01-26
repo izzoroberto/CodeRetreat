@@ -52,22 +52,6 @@ namespace ConsoleApplication1
                     if (!matrix[i][j].IsLive)
                         Console.Write(morto);
                     matrix[i][j].ControllaVicini(matrix);
-                    ////sopra
-                    //matrix[i][j].controllaVicini(matrix, i-1, j, "sopra");
-                    ////sotto
-                    //matrix[i][j].controllaVicini(matrix, i+1, j, "sotto");
-                    ////sin
-                    //matrix[i][j].controllaVicini(matrix, i, j-1, "sin");
-                    ////dest
-                    //matrix[i][j].controllaVicini(matrix, i, j+1, "dest");
-                    ////diagonale sin sopra
-                    //matrix[i][j].controllaVicini(matrix, i-1, j-1, "diagonale sin sopra");
-                    ////diagonale sin sotto
-                    //matrix[i][j].controllaVicini(matrix, i+1, j-1, "diagonale sin sotto");
-                    ////diagonale des sopra
-                    //matrix[i][j].controllaVicini(matrix, i-1, j+1, "diagonale des sopra");
-                    ////diagonale des sotto
-                    //matrix[i][j].controllaVicini(matrix, i+1, j+1, "diagonale des sotto");
                 }
                 Console.WriteLine();
             }
@@ -77,30 +61,16 @@ namespace ConsoleApplication1
             {
                 for (int j = 0; j < matrix[i].Length; j++)
                 {
-
                     matrix[i][j] = matrix[i][j].Update();
 
                     if (matrix[i][j].IsLive)
                         Console.Write(vivo);
                     if (!matrix[i][j].IsLive)
                         Console.Write(morto);
-                  
                 }
                 Console.WriteLine();
             }
-
-            ////T+1
-            //for (int i = 0; i < matrixT1.Length; i++)
-            //{
-            //    for (int j = 0; j < matrixT1[i].Length; j++)
-            //    {
-            //        if (matrixT1[i][j].IsLive)
-            //            Console.Write(vivo);
-            //        if (!matrixT1[i][j].IsLive)
-            //            Console.Write(morto);
-            //    }
-            //    Console.WriteLine();
-            //}
+           
             Console.ReadLine();
         }
     }

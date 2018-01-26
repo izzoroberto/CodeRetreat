@@ -10,6 +10,7 @@ namespace GameOfLife
     {
         private int _x;
         private int _y;
+
         public bool IsLive { get; private set; }
         private int _viciniVivi { get; set; }
 
@@ -19,7 +20,6 @@ namespace GameOfLife
             this._y = y;
             return this;
         }
-
 
         public Cell Update()
         {
@@ -43,7 +43,7 @@ namespace GameOfLife
             IsLife(matrix,_x-1, _y, "sopra");
             IsLife(matrix, _x + 1, _y, "sotto");
             IsLife(matrix, _x, _y-1, "sin");
-            IsLife(matrix, _x-1, _y+1, "dest");
+            IsLife(matrix, _x, _y+1, "dest");
             IsLife(matrix, _x-1, _y-1, "diagonale sin sopra");
             IsLife(matrix, _x+1, _y-1, "diagonale sin sotto");
             IsLife(matrix, _x-1, _y+1, "diagonale des sopra");

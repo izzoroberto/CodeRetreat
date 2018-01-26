@@ -31,19 +31,24 @@ namespace ConsoleApplication1
             matrix[2][1] = new Cell().SetPosition(2, 1);
             matrix[2][2] = new Cell().SetPosition(2, 2);
 
-            bool vai = true;
-            while (vai)
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    ShowWorld(matrix, i, j);
+                }
+                Console.WriteLine();
+            }
+
+            int count = 0;
+            while (count < 5)
             {
                 //T
                 for (int i = 0; i < matrix.Length; i++)
                 {
                     for (int j = 0; j < matrix[i].Length; j++)
                     {
-                        if (matrix[i][j].IsLive)
-                            Console.Write(vivo);
-                        if (!matrix[i][j].IsLive)
-                            Console.Write(morto);
-                        matrix[i][j].ControllaVicini(matrix);
+                        matrix[i][j].ControllaViciniVivi(matrix);
                     }
                     Console.WriteLine();
                 }
@@ -54,19 +59,21 @@ namespace ConsoleApplication1
                     for (int j = 0; j < matrix[i].Length; j++)
                     {
                         matrix[i][j] = matrix[i][j].Update();
-
-                        if (matrix[i][j].IsLive)
-                            Console.Write(vivo);
-                        if (!matrix[i][j].IsLive)
-                            Console.Write(morto);
+                        ShowWorld(matrix, i, j);
                     }
                     Console.WriteLine();
                 }
-                Console.WriteLine("vai");
-                var x =Console.ReadLine();
-                if (x == "x")
-                    vai = false;
+                count++;
             }
+            Console.ReadLine();
+        }
+
+        private static void ShowWorld(Cell[][] matrix, int i, int j)
+        {
+            if (matrix[i][j].IsLive)
+                Console.Write(vivo);
+            if (!matrix[i][j].IsLive)
+                Console.Write(morto);
         }
     }
 }

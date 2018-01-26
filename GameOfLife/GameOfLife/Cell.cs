@@ -27,18 +27,21 @@ namespace GameOfLife
             {
                 Cell c = new Cell().SetPosition(_x,_y);
                 c.IsLive = false;
+                _viciniVivi = 0;
                 return c;
             }
             if (!IsLive && _viciniVivi == 3)
             {
                 Cell c = new Cell().SetPosition(_x, _y);
                 c.IsLive = true;
+                _viciniVivi = 0;
                 return c;
             }
+            _viciniVivi = 0;
             return this;
         }
 
-        public void ControllaVicini(Cell[][] matrix)
+        public void ControllaViciniVivi(Cell[][] matrix)
         {
             IsLife(matrix,_x-1, _y, "sopra");
             IsLife(matrix, _x + 1, _y, "sotto");

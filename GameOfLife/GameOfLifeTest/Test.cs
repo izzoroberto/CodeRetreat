@@ -31,7 +31,7 @@ namespace GameOfLifeTest
             matrix[1][1] = new Cell().StartLife().SetPosition(1, 1);//left
             matrix[2][1] = new Cell().SetPosition(2, 1);//diagonal down left
             matrix[2][0] = new Cell().SetPosition(2, 0);//bottom
-            sut.ControllaVicini(matrix);
+            sut.ControllaViciniVivi(matrix);
 
             //ACT
             var res = sut.Update();
@@ -85,7 +85,7 @@ namespace GameOfLifeTest
             matrix[2][0] = new Cell().SetPosition(2, 0);//diagonal up right
             matrix[2][1] = new Cell().SetPosition(2, 1);//bottom
             matrix[2][2] = new Cell().SetPosition(2, 2);//diagonal bottom left
-            sut.ControllaVicini(matrix);
+            sut.ControllaViciniVivi(matrix);
 
             //ACT
             var res = sut.Update();
@@ -117,7 +117,7 @@ namespace GameOfLifeTest
             {
                 for (int j = 0; j < matrix[i].Length; j++)
                 {
-                    matrix[i][j].ControllaVicini(matrix);
+                    matrix[i][j].ControllaViciniVivi(matrix);
                 }
             }
 
@@ -159,7 +159,7 @@ namespace GameOfLifeTest
             {
                 for (int j = 0; j < matrix[i].Length; j++)
                 {
-                    matrix[i][j].ControllaVicini(matrix);
+                    matrix[i][j].ControllaViciniVivi(matrix);
                 }
             }
 

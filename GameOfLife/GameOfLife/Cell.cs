@@ -8,18 +8,28 @@ namespace GameOfLife
 {
     public class Cell
     {
-        public bool IsLive { get; set; }
-        public int viciniVivi { get; set; }
+        private int _x;
+        private int _y;
+        public bool IsLive { get; private set; }
+        private int _viciniVivi { get; set; }
 
-        public Cell update()
+        public Cell  SetPosition(int x, int y)
         {
-            if (viciniVivi < 2 || viciniVivi > 3)
+            this._x = x;
+            this._y = y;
+            return this;
+        }
+
+
+        public Cell Update()
+        {
+            if (_viciniVivi < 2 || _viciniVivi > 3)
             {
                 Cell c = new Cell();
                 c.IsLive = false;
                 return c;
             }
-            if (!IsLive && viciniVivi == 3)
+            if (!IsLive && _viciniVivi == 3)
             {
                 Cell c = new Cell();
                 c.IsLive = true;
@@ -28,17 +38,34 @@ namespace GameOfLife
             return this;
         }
 
-        public int controllaVicini(Cell[][] matrix, int x, int y, string debug)
+        public void ControllaVicini(Cell[][] matrix)
+        {
+            IsLife(matrix,_x-1, _y, "sopra");
+            IsLife(matrix, _x + 1, _y, "sotto");
+            IsLife(matrix, _x, _y-1, "sin");
+            IsLife(matrix, _x-1, _y+1, "dest");
+            IsLife(matrix, _x-1, _y-1, "diagonale sin sopra");
+            IsLife(matrix, _x+1, _y-1, "diagonale sin sotto");
+            IsLife(matrix, _x-1, _y+1, "diagonale des sopra");
+            IsLife(matrix, _x+1, _y+1, "diagonale des sotto");
+        }
+
+        private void IsLife(Cell[][] matrix, int x, int y, string debug)
         {
             try
             {
-                viciniVivi = matrix[x][y].IsLive ? viciniVivi + 1 : viciniVivi;
+                _viciniVivi = matrix[x][y].IsLive ? _viciniVivi + 1 : _viciniVivi;
             }
             catch (System.IndexOutOfRangeException)
             {
-                viciniVivi = viciniVivi;
+                _viciniVivi = _viciniVivi;
             }
-            return viciniVivi;
+        }
+
+        public Cell StartLife()
+        {
+            IsLive = true;
+            return this;
         }
     }
 }

@@ -12,3 +12,8 @@ C:\MieProgetti\CodeRetreat\GameOfLife\GameOfLife\bin\Debug\GameOfLife.pdb
 C:\MieProgetti\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.csprojResolveAssemblyReference.cache
 C:\MieProgetti\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.dll
 C:\MieProgetti\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.pdb
+C:\Users\roberto_2\Documents\PROGETTI\CodeRetreat\GameOfLife\GameOfLife\bin\Debug\GameOfLife.dll
+C:\Users\roberto_2\Documents\PROGETTI\CodeRetreat\GameOfLife\GameOfLife\bin\Debug\GameOfLife.pdb
+C:\Users\roberto_2\Documents\PROGETTI\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.csprojResolveAssemblyReference.cache
+C:\Users\roberto_2\Documents\PROGETTI\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.dll
+C:\Users\roberto_2\Documents\PROGETTI\CodeRetreat\GameOfLife\GameOfLife\obj\Debug\GameOfLife.pdb

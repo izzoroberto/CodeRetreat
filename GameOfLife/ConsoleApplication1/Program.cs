@@ -20,7 +20,7 @@ namespace ConsoleApplication1
             matrix[1] = new Cell[3];
             matrix[2] = new Cell[3];
 
-            //create cell and populate world
+            //create cell and populate world!
             matrix[0][0] = new Cell().SetPosition(0, 0);
             matrix[0][1] = new Cell().SetPosition(0, 1);
             matrix[0][2] = new Cell().SetPosition(0, 2);
